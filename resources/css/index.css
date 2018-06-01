@@ -1,15 +1,31 @@
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
   margin: 0;
+  background: #134E5E;
+  background: -webkit-linear-gradient(to right, #71B280, #134E5E);
+  background: linear-gradient(to right, #71B280, #134E5E);
+}
+
+.upper-container {
+  background: #DAD299;
+  background: -webkit-linear-gradient(to top, #B0DAB9, #DAD299);
+  background: linear-gradient(to top, #B0DAB9, #DAD299);
+}
+.lower-container {
+  background: #636363;
+  background: -webkit-linear-gradient(to top, #a2ab58, #636363);
+  background: linear-gradient(to bottom, #a2ab58, #636363);
 }
 
 .slideshow-container {
   margin: auto;
   max-width: 1000px;
   position: relative;
+  padding: 10px;
 }
 
 .mySlides {
@@ -21,12 +37,13 @@ img {
   max-height: 700px;
   width: 100%;
   vertical-align: middle;
+  border-radius: 20px;
 }
 
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
-  padding: 8px 12px;
+  padding: 15px 12px;
   position: absolute;
   top: 0;
 }
@@ -46,7 +63,7 @@ img {
 }
 
 .next {
-  right: 0;
+  right: 10px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -71,6 +88,52 @@ img {
   to {opacity: 1}
 }
 
+h1 {
+  text-align: center;
+  font-size: 54px;
+  color: #e7f79b;
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 5px;
+}
+
+p, ul, center {
+  width: 100%;
+  vertical-align: middle;
+  line-height: 3.5vh;
+  color: #fff;
+  font-family: "Arima Madurai", cursive;
+}
+
+li {
+  font-weight: 600;
+  list-style-type: square;
+  font-family: "Arima Madurai", cursive;
+}
+
+span {
+  font-weight: normal;
+  font-family: "Arima Madurai", cursive;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer {
+  border-radius: 50px;
+}
+
 @media only screen and (max-width: 300px) {
-  .prev, .next {font-size: 11px}
+  .prev, .next, li, p, center {
+    font-size: 11px
+  }
+  h1 {
+    font-size: 24px;
+  }
 }
